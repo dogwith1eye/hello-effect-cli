@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 const { program } = require('commander');
-import { orderPizza } from './index'
+import { orderPizza } from './programIndex'
 
 import * as Z from "@effect/io/Effect";
-import { orderPizzaEff } from './indexEff'
+import { orderPizzaEff } from './programIndexEff'
 
 program
   .version('0.1.0')

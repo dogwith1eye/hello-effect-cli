@@ -6,8 +6,8 @@ import * as Z from "@effect/io/Effect"
 import * as ZL from "@effect/io/Layer"
 import { pipe } from "@fp-ts/data/Function"
 
-import { randomProgram } from './random'
-import { CustomRandom, randomCustomProgram } from './randomCustom'
+import { randomProgram } from './programRandom'
+import { CustomRandom, randomCustomProgram } from './programRandomCustom'
 
 program
   .version('0.1.0')
