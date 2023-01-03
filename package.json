@@ -2,13 +2,12 @@
   "name": "hello-effect-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "ts-node ./src/cliLayers.ts",
     "clean": "rimraf ./dist/ ./exec/",
     "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "npm run build && pkg . --out-dir ./exec/"
+    "bundle": "npm run build && pkg ./dist/cliLayers.js -t latest-macos-x64 --out-dir ./exec/"
   },
   "keywords": [],
   "author": "",
